@@ -28,9 +28,7 @@ public class CargarArchivos extends javax.swing.JFrame {
     JFileChooser fc = new JFileChooser();
     JFileChooser fc2 = new JFileChooser();
     public ArrayList<int[]> procesos = new ArrayList<>();
-    public ArrayList<int[]> referencias = new ArrayList<>();
-    MainMemory main_memory;            
-    MPrimaria m_primaria;
+    public ArrayList<int[]> referencias = new ArrayList<>();    
     int sys_memory;
     int sys_size;
     Administrativo admin;
