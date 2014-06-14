@@ -91,7 +91,7 @@ public class MailboxLog extends JFrame implements Runnable {
         textArea.append("\n" + evento + "  " + date);
     }
 
-    public void setListaProc(ListaSimpleCircular lstProc) {
+    public void setListaProc(ListaProcesos lstProc) {
         //this.lstProcesos = lstProc;
     }
 

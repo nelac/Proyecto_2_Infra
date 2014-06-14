@@ -11,7 +11,7 @@ class Main2 {
         t1.start();
         t2.start();
         
-        ListaSimpleCircular NuevaLista = new ListaSimpleCircular();
+        ListaProcesos NuevaLista = new ListaProcesos();
 
     }
 
