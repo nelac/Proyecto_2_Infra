@@ -22,9 +22,11 @@ public class Administrativo extends javax.swing.JFrame {
      */
 
     public int sys_productores;
-    public int sys_memory;
-    public int sys_process;
+    public int sys_consumidores;
+    //public int sys_process;
     public int sys_commands;
+    public ListaImpresoras lista_impresoras;
+    public ListaProcesos lista_procesos;
 
     public Administrativo() {
         initComponents();
@@ -180,25 +182,21 @@ public class Administrativo extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_ContinueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ContinueActionPerformed
-        System.out.println("Iniciando configuraciones");
-        //        int n = Integer.parseInt(number_process.getValue().toString());
-        /*fetch = (sel_fetch.getSelectedItem().equals("Demand")) ? true : false;
-        placement = (sel_placement.getSelectedItem().equals("First Available")) ? true : false;
-        replacement = sel_replacement.getSelectedIndex();
-        cleaning = (sel_size.getSelectedItem().equals("Demand")) ? true : false;
-        management_size = (sel_size.getSelectedItem().equals("Fixed")) ? true : false;
-        replacement_scope = (sel_replacement_scope.getSelectedItem().equals("Global")) ? true : false;
-        */
+        System.out.println("Iniciando configuraciones");        
         sys_productores = (Integer) jSpinnerProductores.getValue();
-        sys_memory = (Integer) jSpinnerConsumidores.getValue();
+        sys_consumidores = (Integer) jSpinnerConsumidores.getValue();
         sys_commands = (Integer) jSpinnerCommands.getValue();
-        System.out.println(" " + sys_productores + " " + sys_memory + " " + sys_process + " " + sys_commands);
+        System.out.println(" " + sys_productores + " " + sys_consumidores + " " + sys_commands);
         //boolean format_type_b = (format_type.getSelectedItem().equals("Fijo")) ? true : false;
-        if(0< sys_productores  && 0< sys_memory && 0< sys_process && 0< sys_commands && sys_productores<sys_memory){
-            CargarArchivos cargar_archivos = new CargarArchivos();
-            cargar_archivos.setVisible(true);
+        if(0< sys_productores  && 0< sys_consumidores && 0< sys_commands && sys_productores<sys_consumidores){
+            for(int i = 0; i< sys_productores; i++){
+                System.out.println("LOL");
+            }
             this.setVisible(false);
-            cargar_archivos.setVariables(sys_memory,sys_productores, this);
+            //CargarArchivos cargar_archivos = new CargarArchivos();
+            //cargar_archivos.setVisible(true);
+            
+            //cargar_archivos.setVariables(sys_consumidores,sys_productores, this);
 
             //cargar_archivos.procesos;
             //cargar_archivos.referencias;
