@@ -42,7 +42,8 @@ public class VentanaImprimir extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         
         System.out.println("QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ");
-        cantP.listaP.Imprimir();
+System.out.println("Se imprime vacio");        
+cantP.listaP.Imprimir();
         System.out.println("DDDDDDDDDDDDDDGGGGGGGGGGGGGG");
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(listaPro.Recorrer(cantP.sys_productores,cantP.listaP)));
 

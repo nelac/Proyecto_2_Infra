@@ -13,7 +13,7 @@ import javax.swing.JFileChooser;
 
 /**
  *
- * @author AlexanderDM
+ * @author hhhhhh
  */
 public class CargarArchivos extends javax.swing.JFrame {
 
