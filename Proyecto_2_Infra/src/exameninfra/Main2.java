@@ -2,7 +2,7 @@ package exameninfra;
 
 class Main2 {
 
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
 
         VentanaProceso vp ;
         MailboxLog mbl;
@@ -14,5 +14,5 @@ class Main2 {
         ListaProcesos NuevaLista = new ListaProcesos();
 
     }
-
+*/
 };
